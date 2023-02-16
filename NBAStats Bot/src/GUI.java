@@ -172,7 +172,7 @@ public class GUI extends JFrame implements KeyListener, ActionListener {
     }
 
     public static void darkCheck() throws IOException, FileNotFoundException {
-        br = new BufferedReader(new FileReader("mode.txt"));
+        br = new BufferedReader(new FileReader("NBAStats Bot/src/mode.txt"));
         data = br.readLine();
         br.close();
         if (data.equals("dark")) {
@@ -184,7 +184,7 @@ public class GUI extends JFrame implements KeyListener, ActionListener {
     }
 
     public static void switchMode() throws IOException, FileNotFoundException {
-        writer = new BufferedWriter(new FileWriter("mode.txt"));
+        writer = new BufferedWriter(new FileWriter("NBAStats Bot/src/mode.txt"));
         if (!dark) {
             input.setCaretColor(Color.LIGHT_GRAY);
             panel.setBackground(Color.DARK_GRAY.darker());
