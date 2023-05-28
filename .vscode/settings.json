@@ -1,7 +1,0 @@
-{
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "NBAStats Bot/json-20211205.jar",
-        "mode.jar"
-    ]
-}
